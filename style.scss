@@ -1,0 +1,86 @@
+$color_1: white;
+$color_2: green;
+$font-family_1: Arial, sans-serif;
+$font-family_2: Lato-Bold;
+$font-family_3: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+$background-color_1: rgba(38, 255, 0, 0.5);
+$background-color_2: #c2fbd7;
+
+@font-face {
+	font-family: Lato-Bold;
+	src: url('fonts/Lato-Bold.ttf');
+}
+body {
+	background-image: url("img/bg.gif");
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: $font-family_1;
+	background-size: cover;
+	background-position: center;
+	color: $color_1;
+}
+.footer {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	background-color: $background-color_1;
+	width: 100%;
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	background-color: $background-color_1;
+	width: 25%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.navbar {
+	display: flex;
+	justify-content: center;
+	padding: 1px;
+	background-color: $background-color_1;
+	width: 55%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	a {
+		color: $color_1;
+		text-decoration: solid;
+		margin-right: 15px;
+		font-family: $font-family_2;
+		font-size: 20px;
+	}
+}
+.text {
+	padding: 50px;
+	background-color: $background-color_1;
+	margin-top: 5%;
+	text-align: center;
+}
+.project {
+	background-color: $background-color_2;
+	border-radius: 100px;
+	box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+	color: $color_2;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font-family_3;
+	padding: 7px 20px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 250ms;
+	border: 0;
+	font-size: 16px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	&:hover {
+		box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+		transform: scale(1.05) rotate(-1deg);
+	}
+}
+p {
+	margin: 5px;
+}
