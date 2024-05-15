@@ -42,7 +42,8 @@ body {
 }
 .navbar a {
   color: white;
-  text-decoration: solid;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
   margin-right: 15px;
   font-family: Lato-Bold;
   font-size: 20px;
@@ -69,7 +70,8 @@ body {
   transition: all 250ms;
   border: 0;
   font-size: 16px;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
@@ -80,6 +82,4 @@ body {
 
 p {
   margin: 5px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
