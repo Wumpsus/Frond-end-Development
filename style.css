@@ -40,15 +40,36 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
 }
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 10px; /* Pas deze waarde aan voor meer of minder ruimte tussen de links */
+}
+
 .navbar a {
   color: white;
   -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   margin-right: 15px;
   font-family: Lato-Bold;
   font-size: 20px;
 }
 
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar li {
+    flex: none;
+    width: 100%;
+  }
+}
 .text {
   padding: 50px;
   background-color: rgba(38, 255, 0, 0.5);
@@ -71,15 +92,28 @@ body {
   border: 0;
   font-size: 16px;
   -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .project:hover {
   box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
 
+.groot {
+  font-size: 3em;
+  font-weight: bold;
+}
+
 p {
   margin: 5px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.text ul {
+  list-style: none; /* Verwijder de standaard lijststijl */
+  padding-left: 0; /* Optioneel: Verwijder de linkermarge */
+}
+
+/*# sourceMappingURL=style.css.map */
